@@ -1,0 +1,40 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+    <h1>
+        ING Mortgage Platform
+      </h1>
+      <div class="outer">
+        <div class = "tabs">
+          <button class ="btn btn-primary">Create New Application</button>
+        </div>
+        <div class = "tabs">
+          <label>Search for Application</label>
+          <input [(ngModel)]="applicationId" placeholder="Enter Application Id" >
+          <button class ="btn btn-info">Search</button>
+          </div>
+        <div class = "tabs">
+            <label>Profile Controller</label>
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Credit Assessor</a></li>
+          <li><a href="#">Credit Approver</a></li>
+          <li><a href="#">Leading Manager</a></li>
+        </ul>
+            <!-- <select   [(ngModel)]="profile" >
+                <option value="">Select Profile Controller</option>
+                <option *ngFor="let type of types"
+                        [value]="type">
+                        {{type}}
+                </option> 
+              </select>-->
+     </div></div>
+
+    </div>
+      
+</div>
+
+<div>
+<router-outlet></router-outlet>
+
+</div>
